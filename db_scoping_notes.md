@@ -10,10 +10,11 @@ The data here is relatively stable. While zones may be split and renamed, or sch
 
 1. _Location Lists_
     + This is the term we use to refer to geographic hierarchies. From the national level down to the school level, the structure is a simple 1:1 nesting.
-        * **Counties**: (roughly 50) each of which contains several subcounties
-        * **Subcounties**: (roughly 330) each of which contains several zones
-        * **Zones**: (roughly 1300) each of which contains several schools
+        * **Counties**: (roughly 50) each of which contains several subcounties....DK - so we have the 47 counties but we also have the         five APBET counties for the APBET institions - Nairobi APBET, Mombasa APBET, Kisumu APBET, Nakuru APBET and Eldoret APBET
+        * **Subcounties**: (roughly 330) each of which contains several zones... DK - subcounties are nested within counties. Note that         though APBET counties are created, they use similar sub-counties as public schools. This is where changes begin. Eventhough             counties are somewhat stable, schools can change from sub-county to another. Subcounties are also created from time to time
+        * **Zones**: (roughly 1300) each of which contains several schools. zones are nested within subcounties. Note that zones with           one name can be found in different counties. Also we have clusters within subcounties.
         * **Schools**: (roughly 26,000) each of which contains 3 grades, potentially with multiple streams in each grade
+        * DK: just wondering where to fit PTTCs? MoEST at the head quarters etc etc
     + Each entity in this hierarchy should contain a number of attributes. At a minimum, these would include
         * **unique identifier**: for use within the Tangerine data-collection ecosystem
         * **name**: for use as a human-readable label associated with the unique identifier in reports, summaries, etc.
@@ -24,7 +25,9 @@ The data here is relatively stable. While zones may be split and renamed, or sch
         * **shapefile data**: for geographic areas, not schools
         * **books received**: for grades within schools, split by language/subject (English, Kiswahili, Maths)
         * **SNE status**: one of {mainstream, special unit, sne school} for schools
+        ** DK - This is a major branch - either schools are SNE or regular - maybe we could have that branch somewhere
         * **enrollment**: by sex, for streams or grades within schools
+        ** SNE has various types of interest - HI or VI or combined
         * **residential status**: for each school, one of {residential, non-residential}. Informs budgeting and logistical planning.
         * **materials drop-off point**: for each school. Usually but not always one per zone. Informs budgeting and logistical planning.
         * **assigned
