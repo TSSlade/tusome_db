@@ -2,7 +2,7 @@
 
 ## Data Sources
 
-The data Tusome generates, collects, and consumes falls broadly into a few categories: entity-based, event-based, and ??
+The data Tusome generates, collects, and consumes falls broadly into two categories: entity-based and event-based.
 
 ### Entity-based data
 
@@ -50,7 +50,7 @@ The data here is relatively stable. While zones may be split and renamed, or sch
         * **tablet identifier**: for use in logistical planning. Not relevant for all entities.
         * **duty station**: for use in budgeting and logistical planning.
 
-## Activity-based data
+### Activity-based data
 
 These are data that are relatively less permanent. They may vary substantially from one round of activity or season of implementation to another.
 
@@ -93,8 +93,11 @@ Much of the data we care about for analytic purposes lies at the intersection of
 1. **Tangerine-based data by unique IDs for individuals and schools** <-- To enable a holistic view of contact across intervention modalities
 
 ## Considerations
-**This sections contains information on dynamism of schools changing names, zones or subcounties**
-* Need to be aware that schools keep changing from one zone to another
-* Zones also change from one sub-county to another or a subcounty is subdivided into two zones
-* We need to be aware when the changes have formally been confirmed, and documents that confirm that the changes have been effected
-* When should the updates on the changes be made
+This section contains information regarding the dynamism of schools, zones, or subcounties.
+
+1. Schools can be reassigned from one zone to another.
+1. Zones can be reassigned from one sub-county to another. 
+1. Zones can split (into two or more zones) or combined.
+1. Subcounties can have zones reassigned _away_ from them or _to_ them.
+1. Changes will only become official when certain supporting documentation has been obtained. The database structure should provide a mechanism for attaching the necessary supporting documentation to the affected records.
+1. Changes will have specific effective dates. Those dates should exist as attributes or other metadata of the affected records. 
