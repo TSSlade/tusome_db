@@ -30,11 +30,21 @@ The data here is relatively stable. While zones may be split and renamed, or sch
         * **assigned
 
 1. _Lists of Persons_
-    + These are primarily reference lists of personnel in whom Tusome has an interest. They would include but not necessarily be limited to
-        * **teachers**: mapped to their streams, grades, and schools
-        * **CSOs** or **coaches**: mapped to their zones
-        * **education officials**: mapped to their geographic area of responsibility and their institution
-        * **RTI personnel**: mapped to their geographic area of responsibility and their unit/team
+
+	+	These are primarily reference lists of personnel in whom Tusome has an interest. The data would include their phone contacts and their email addresses They would include but not necessarily be limited to
+		* **	teachers: mapped to their streams, grades, and schools
+		* **	Head teachers- mapped to their schools
+		* **Deputy head teachers- mapped to their schools
+		* **CSOs or coaches: mapped to their zones
+		* **SNE CSOs mapped to their sub counties and areas of specialization.
+		* **education officials: these includes: Regional Cordinators (MoE and TSC), County directors (MoE and TSC), TSC deputy County directors  QASOs (MoE and TSC), SCD (MoE and TSC) CPCs. MoE head office directors and TSC directors. SAGAs directors and SAGAs contact person mapped to their geographic area of responsibility and their institution
+		* **NTTs mapped to their employers (MoE, TSC, SAGAs)
+		* **PPTCs: Names, Location (county subcounty and tusome region) Name of Principle and deputy and contacts. Dean of Cir name, Lectures numbers for English and kiswahili
+		* **RTI personnel: mapped to their geographic area of responsibility and their unit/team (technical vs Operations)
+ 		* **Training captains in CSO trainings mapped to their county 
+		* **TOT trainers mapped to their role and county/subcounty/zone of work.
+
+
     + Each entity included in one of these lists should contain a number of attributes. At a minimum, these would include
         * **unique identifier**: for use within Tusome's database
         * **employer identifier**: for use when mapping this individual to external partners. These might include, for instance, TSC (teachers' service commission) numbers.
@@ -86,7 +96,7 @@ I'm not quite sure how to think about it, but it would also be useful to track t
 
 Much of the data we care about for analytic purposes lies at the intersection of multiple proposed tables/lists. This is a non-exhaustive list of the kinds of join operations we would want to perform on our data.
 
-1. **\[Role\] assigned to \[location\]**, where the role could be a government official, CSO, etc. and the role could be a county, zone, school, etc. The purpose of this join would be to enable us to rapidly identify points of contact and issue notices via SMS / email / WhatsApp with location-based content; identify and document areas where a staffing gap has emerged, so it can be addressed in discussions with government personnel; etc.
+1. **\[Role\] assigned to \[location\]**, where the role could be a government official by name, CSO, etc. and the locationrole could be a county, zone, school, etc. The purpose of this join would be to enable us to rapidly identify points of contact and issue notices via SMS / email / WhatsApp with location-based content; identify and document areas where a staffing gap has emerged, so it can be addressed in discussions with government personnel; etc. For location without a role (depending on the role) would be blank for us to identify the locations without roles eg Zones without CSOs, Sub-counties without a SCDE.
 1. **"residential" status of each individual at a training venue based on their associated school** <-- This is relevant because reimbursement rates for training attendance vary as a function of a participant's duty station.
 1. **Contact information for trainers at a venue** <-- This is relevant in cases where rapid, large-scale communication needs to be provided, such as updates to plans regarding schedule, content, logistics, registration, etc.
 1. **individual demographic data pulled into training participation records by way of individual unique IDs** <-- For the purposes of reporting/disaggregation by sex, and for tracking intervention dosage across events and time
