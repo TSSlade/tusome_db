@@ -93,4 +93,8 @@ Much of the data we care about for analytic purposes lies at the intersection of
 1. **Tangerine-based data by unique IDs for individuals and schools** <-- To enable a holistic view of contact across intervention modalities
 
 ## Considerations
-** This sections contains information on dynamism of schools changing names, zones or subcounties **
+**This sections contains information on dynamism of schools changing names, zones or subcounties**
+* Need to be aware that schools keep changing from one zone to another
+* Zones also change from one sub-county to another or a subcounty is subdivided into two zones
+* We need to be aware when the changes have formally been confirmed, and documents that confirm that the changes have been effected
+* When should the updates on the changes be made
