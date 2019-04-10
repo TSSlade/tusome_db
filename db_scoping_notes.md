@@ -91,3 +91,5 @@ Much of the data we care about for analytic purposes lies at the intersection of
 1. **Contact information for trainers at a venue** <-- This is relevant in cases where rapid, large-scale communication needs to be provided, such as updates to plans regarding schedule, content, logistics, registration, etc.
 1. **individual demographic data pulled into training participation records by way of individual unique IDs** <-- For the purposes of reporting/disaggregation by sex, and for tracking intervention dosage across events and time
 1. **Tangerine-based data by unique IDs for individuals and schools** <-- To enable a holistic view of contact across intervention modalities
+
+## Considerations
