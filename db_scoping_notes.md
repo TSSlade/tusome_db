@@ -93,3 +93,4 @@ Much of the data we care about for analytic purposes lies at the intersection of
 1. **Tangerine-based data by unique IDs for individuals and schools** <-- To enable a holistic view of contact across intervention modalities
 
 ## Considerations
+**This sections contains information on dynamism of schools changing names, zones or subcounties **
